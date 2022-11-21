@@ -7,7 +7,7 @@ import {
 
 export const About = () => {
     return (
-        <div className="bg-gray-700 h-auto py-14 pb-44">
+        <div className="bg-gray-700 h-auto py-14 pb-44 min-h-[90vh]">
             <Container className="p-14 pt-4  bg-white">
                 <h1 className="uppercase p-4 pb-0 font-bold text-3xl">
                     Giới thiệu

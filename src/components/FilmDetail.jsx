@@ -12,6 +12,7 @@ export const FilmDetail = () => {
     const [trailerOpen, setTrailerOpen] = useState(false);
 
     useEffect(() => {
+        window.scroll(0, 0);
         const delayInterval = setInterval(() => {
             setLoading(false);
         }, 1000);
@@ -28,7 +29,7 @@ export const FilmDetail = () => {
             {loading === true ? (
                 <Loading />
             ) : (
-                <div className="bg-gray-900 h-screen">
+                <div className="bg-gray-900 min-h-[90vh]">
                     {trailerOpen && (
                         <div
                             onClick={() => setTrailerOpen(false)}

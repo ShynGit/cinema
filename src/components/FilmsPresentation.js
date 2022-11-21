@@ -11,10 +11,12 @@ export default function FilmsPresentation({ ListOfFilms }) {
                         <Card
                             closeIcon={<Icon>close</Icon>}
                             header={
-                                <img
-                                    src={film.Image}
-                                    className="object-cover h-96 w-full rounded-sm"
-                                />
+                                <Link to={`/detail/${film.id}`}>
+                                    <img
+                                        src={film.Image}
+                                        className="object-cover h-96 w-full rounded-sm"
+                                    />
+                                </Link>
                             }
                             reveal={
                                 <div className="mt-12">
